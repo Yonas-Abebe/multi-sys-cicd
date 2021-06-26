@@ -18,7 +18,7 @@ http://www.mulesoft.org/schema/mule/tls http://www.mulesoft.org/schema/mule/tls/
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="380e4db6-5f0d-40ae-8317-823a631bd3d2" >
 		<http:listener-connection host="${http.host}" port="${http.port}" />
 	</http:listener-config>
-	<configuration-properties doc:name="Configuration properties" doc:id="30a0ad64-f53b-4eb7-a131-e93651b4f617" file="configuration\local.properties" />
+	<configuration-properties doc:name="Configuration properties" doc:id="30a0ad64-f53b-4eb7-a131-e93651b4f617" file="configuration/local.properties" />
 	<global-property doc:name="Global Property" doc:id="6b05e0d0-c247-44c6-90c6-6bce3df0f64d" name="env" value="local" />
 	<db:config name="Database_Config" doc:name="Database Config" doc:id="75019db4-0d00-44d8-9c1d-d20bbb22db81" >
 		<db:mssql-connection host="${db.host}" instanceName="${db.instanceName}" port="${db.port}" user="${db.user}" password="${secure::db.password}" databaseName="${db.databaseName}" />
@@ -33,7 +33,7 @@ http://www.mulesoft.org/schema/mule/tls http://www.mulesoft.org/schema/mule/tls/
 	<salesforce:sfdc-config name="Salesforce_Config" doc:name="Salesforce Config" doc:id="13d814ac-3e07-4dce-b29c-217294a06aec" >
 		<salesforce:basic-connection username="${salesforce.username}" password="${secure::salesforce.password}" securityToken="${secure::salesforce.token}" />
 	</salesforce:sfdc-config>
-	<secure-properties:config name="Secure_Properties_Config" doc:name="Secure Properties Config" doc:id="55cb9d41-64f5-4ee8-84ab-afe59fb9b8cb" file="configuration\local-secured.properties" key="Mayo7882*#*Redu2009*#*" >
+	<secure-properties:config name="Secure_Properties_Config" doc:name="Secure Properties Config" doc:id="55cb9d41-64f5-4ee8-84ab-afe59fb9b8cb" file="configuration/local-secured.properties" key="Mayo7882*#*Redu2009*#*" >
 		<secure-properties:encrypt algorithm="Blowfish" />
 	</secure-properties:config>
 	<email:smtp-config name="Email_SMTP" doc:name="Email SMTP" doc:id="ccb81e45-3b90-45d8-8b94-dd5110431334" >
